@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.CountryCapitalQuiz.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minWidth">@dimen/min_button_width</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.CountryCapitalQuiz.TextView.PrimaryLight" parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">@dimen/min_text_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.CountryCapitalQuiz.TextView.Primary" parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">@dimen/min_text_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+    </style>
+
+    <style name="Widget.CountryCapitalQuiz.TextView.Big" parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">@dimen/min_text_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline4</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Widget.CountryCapitalQuiz.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?attr/colorSecondary</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.CountryCapitalQuiz.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeErrorColor">?attr/colorError</item>
+        <item name="errorIconTint">?attr/colorError</item>
+        <item name="errorTextColor">?attr/colorError</item>
+        <item name="errorIconDrawable">@drawable/ic_error</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1
+        </item>
+    </style>
+
+</resources>

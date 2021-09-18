@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.MenuFragment">
+
+    <data>
+
+        <variable
+            name="menuFragment"
+            type="com.example.countrycapitalquiz.ui.MenuFragment" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_between_elements"
+                android:importantForAccessibility="no"
+                android:src="@drawable/globe" />
+
+            <TextView
+                style="@style/Widget.CountryCapitalQuiz.TextView.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_marginBottom="@dimen/margin_between_elements"
+                android:text="@string/select_game_mode" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/country_quiz"
+                style="@style/Widget.CountryCapitalQuiz.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> menuFragment.startGameLengthFragment(true)}"
+                android:text="@string/country_quiz" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/capital_quiz"
+                style="@style/Widget.CountryCapitalQuiz.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> menuFragment.startGameLengthFragment(false)}"
+                android:text="@string/capital_quiz" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/learn"
+                style="@style/Widget.CountryCapitalQuiz.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> menuFragment.startLearnFragment()}"
+                android:text="@string/learn" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exit"
+                style="@style/Widget.CountryCapitalQuiz.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> menuFragment.exitGame()}"
+                android:text="@string/exit"
+                app:backgroundTint="?attr/colorError" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.countrycapitalquiz.ui.MenuFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_lengthFragment"
+            app:destination="@id/lengthFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_learnFragment"
+            app:destination="@id/learnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lengthFragment"
+        android:name="com.example.countrycapitalquiz.ui.LengthFragment"
+        android:label="@string/length"
+        tools:layout="@layout/fragment_length">
+        <action
+            android:id="@+id/action_lengthFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.example.countrycapitalquiz.ui.LearnFragment"
+        android:label="@string/learn" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.countrycapitalquiz.ui.ResultFragment"
+        android:label="@string/results">
+        <action
+            android:id="@+id/action_resultFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.countrycapitalquiz.ui.game.GameFragment"
+        android:label="@string/game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

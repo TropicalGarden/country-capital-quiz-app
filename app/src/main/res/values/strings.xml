@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Country Capital Quiz</string>
+    <string name="question_count">Question: %d/%d</string>
+    <string name="score">Score: %d</string>
+    <string name="question_country">"%s is the capital of which country?"</string>
+    <string name="question_capital">"What is the capital of %s?"</string>
+    <string name="menu">Menu</string>
+    <string name="length">Length</string>
+    <string name="results">Results</string>
+    <string name="enter_your_guess">Enter your answer</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="try_again">Incorrect! Try Again!</string>
+    <string name="excellent">Excellent!</string>
+    <string name="good">Good!</string>
+    <string name="mediocre">Mediocre!</string>
+    <string name="poor">Poor!</string>
+    <string name="game">Game</string>
+    <string name="you_scored">You scored: %d</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+    <string name="correct">Correct!</string>
+    <string name="capital_quiz">Capital Quiz</string>
+    <string name="country_quiz">Country Quiz</string>
+    <string name="learn">Learn</string>
+    <string name="select_quiz_length">Select Quiz Length</string>
+    <string name="done">Done</string>
+    <string name="select_game_mode">Select Game Mode</string>
+    <string name="index">%d</string>
+    <string name="result">You scored %d/%d</string>
+    <string name="country_name_item">Country: %s</string>
+    <string name="capital_name_item">Capital: %s</string>
+    <string name="long_length">Long</string>
+    <string name="medium_length">Medium</string>
+    <string name="short_length">Short</string>
+</resources>

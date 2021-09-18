@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_text_height">16dp</dimen>
+    <dimen name="min_button_width">250dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="margin_between_elements">8dp</dimen>
+</resources>
