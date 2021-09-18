@@ -82,7 +82,7 @@ class GameViewModel : ViewModel() {
     fun calculatePerformance(): Performance {
         val performanceFraction = _score.value!!.toFloat() / _length.toFloat()
         return when {
-            performanceFraction < Performance.MEDIOCRE.value -> Performance.POOR
+            performanceFraction < Performance.MEDIOCRE.value -> Performance.SUBPAR
             performanceFraction < Performance.GOOD.value -> Performance.MEDIOCRE
             performanceFraction < Performance.EXCELLENT.value -> Performance.GOOD
             else -> Performance.EXCELLENT

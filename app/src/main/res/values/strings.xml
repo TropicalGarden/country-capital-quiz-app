@@ -14,7 +14,7 @@
     <string name="excellent">Excellent!</string>
     <string name="good">Good!</string>
     <string name="mediocre">Mediocre!</string>
-    <string name="poor">Poor!</string>
+    <string name="subpar">Subpar!</string>
     <string name="game">Game</string>
     <string name="you_scored">You scored: %d</string>
     <string name="exit">Exit</string>

@@ -54,7 +54,7 @@ class ResultFragment : Fragment() {
             Performance.EXCELLENT -> getString(R.string.excellent)
             Performance.GOOD -> getString(R.string.good)
             Performance.MEDIOCRE -> getString(R.string.mediocre)
-            else -> getString(R.string.poor)
+            else -> getString(R.string.subpar)
         }
     }
 
@@ -63,7 +63,7 @@ class ResultFragment : Fragment() {
             Performance.EXCELLENT -> R.drawable.trophy_excellent
             Performance.GOOD -> R.drawable.trophy_good
             Performance.MEDIOCRE -> R.drawable.trophy_mediocre
-            else -> R.drawable.trophy_poor
+            else -> R.drawable.trophy_subpar
         }
     }
 

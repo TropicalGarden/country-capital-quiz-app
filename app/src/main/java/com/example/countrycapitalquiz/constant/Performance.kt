@@ -4,5 +4,5 @@ enum class Performance(val value: Float) {
     EXCELLENT(0.9f),
     GOOD(0.7f),
     MEDIOCRE(0.5f),
-    POOR(0.0f)
+    SUBPAR(0.0f)
 }
