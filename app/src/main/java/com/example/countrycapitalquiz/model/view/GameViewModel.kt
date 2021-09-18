@@ -10,7 +10,7 @@ import kotlin.collections.set
 
 class GameViewModel : ViewModel() {
 
-    private lateinit var _result: Result
+    private var _result: Result = Result(LinkedHashMap())
     val result get() = _result
 
     private lateinit var _countries: List<Country>
@@ -45,7 +45,9 @@ class GameViewModel : ViewModel() {
     fun resetGame() {
         _score.value = 0
         _questionCount.value = 0
-        _result = Result(LinkedHashMap())
+        if (_result.answers.isNotEmpty()) {
+            _result.answers.clear()
+        }
     }
 
     fun nextQuestion(): Boolean {
