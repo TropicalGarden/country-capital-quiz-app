@@ -25,7 +25,7 @@ class LearnFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.learnRecyclerView.adapter =
-            CountryAdapter(DataSource(requireContext()).loadCountries())
+            CountryAdapter(DataSource(requireContext()).loadSortedCountries())
     }
 
 }

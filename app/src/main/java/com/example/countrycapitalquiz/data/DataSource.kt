@@ -24,6 +24,10 @@ class DataSource(private val context: Context) {
         }
     }
 
+    fun loadSortedCountries(): List<Country> {
+        return loadCountries().sortedBy { it.countryName }
+    }
+
     private fun formatName(name: String): String {
         return name.split("_")
             .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
