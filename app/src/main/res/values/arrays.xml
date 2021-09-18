@@ -78,11 +78,26 @@
         <item>athens|greece</item>
         <item>madrid|spain</item>
         <item>paris|france</item>
-        <item>prague|czech_republic</item>
+        <item>prague|czechia</item>
         <item>riga|latvia</item>
         <item>stockholm|sweden</item>
         <item>tallinn|estonia</item>
         <item>vienna|austria</item>
         <item>zagreb|croatia</item>
+        <item>vilnius|lithuania</item>
+        <item>thimphu|bhutan</item>
+        <item>sofia|bulgaria</item>
+        <item>sarajevo|boznia_and_herzegovina</item>
+        <item>pristina|kosovo</item>
+        <item>praia|cape_verde</item>
+        <item>nouakchott|mauritania</item>
+        <item>minsk|belarus</item>
+        <item>maseru|lesotho</item>
+        <item>luxembourg_city|luxembourg</item>
+        <item>lusaka|zambia</item>
+        <item>khartoum|sudan</item>
+        <item>kathmandu|nepal</item>
+        <item>bucharest|romania</item>
+        <item>amsterdam|netherlands</item>
     </string-array>
 </resources>
